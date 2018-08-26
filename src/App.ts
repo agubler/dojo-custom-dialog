@@ -3,7 +3,7 @@ import { w, v } from '@dojo/framework/widget-core/d';
 import dojo from '@dojo/themes/dojo';
 import custom from './themes/custom/theme';
 
-import { CustomDialog } from './widgets/CustomDialogs';
+import { CustomDialog } from './widgets/CustomDialog';
 
 export class App extends WidgetBase {
 	private _noThemeOpen = false;

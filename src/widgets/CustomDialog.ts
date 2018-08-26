@@ -9,8 +9,8 @@ import * as css from './styles/CustomDialog.m.css';
 export class CustomDialog extends Themed(WidgetBase)<DialogProperties> {
 	protected render() {
 		return w(Dialog, {
-			enterAnimation: this.theme(css.enter)!,
-			exitAnimation: this.theme(css.exit)!,
+			enterAnimation: this.theme(css.enter) || undefined,
+			exitAnimation: this.theme(css.exit) || undefined,
 			...this.properties
 		});
 	}
